@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento User - Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+
+</head>
+<body>
+
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+          <span class="dot"></span>
+          <div class="dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+    <section class="form-section">
+        <div class="form-container">
+            <img src="assets/images/loginimg.png" class="form-img" alt="">
+            <div class="form">
+                <h1 class="form-heading">welcome back your life, login here to rock it</h1>
+                <input id="t1" type="email" autocomplete="off" id="email" placeholder="username">
+                <input id="t2" type="password" autocomplete="off" id="password" placeholder="password">
+                <button onClick="btn001()" class="submit-btn">login</button>
+                <a href="userregistration.html" class="other-form-link">Don't have an account? Register</a>
+                <span class="error">**this is an error</span>
+                <script>
+                  function btn001(){
+                      var f1;
+                      var dt1 = t1.value ;
+                      var dt = t2.value;
+                      if(dt1 == "user179" && dt =="event0"){
+                          document.location.href="event-details.html" ;
+                      }
+                      else if(dt1 == "user176" && dt =="user@176"){
+                          document.location.href="rent-venue.html" ;
+                      }
+                      else if(dt1 == "user177" && dt =="user@177"){
+                          document.location.href="tickets.html" ;
+                      }
+                      else if(dt1 == "user178" && dt =="user@178"){
+                          document.location.href="about.html" ;
+                      }
+                      else if(dt1 == "user180" && dt =="user@180"){
+                          document.location.href="index.html" ;
+                      }
+                  
+                      else{
+                          f1="invalid user credentials" ;
+                          document.getElementById("msg01").innerHTML = f1;
+                   }
+                  }
+              </script>
+                
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/common.js"></script>
+    <script src="js/form.js"></script>
+
+</body>
+</html>
